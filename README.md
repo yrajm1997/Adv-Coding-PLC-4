@@ -4,7 +4,7 @@
 ### Problem Statement
 You are tasked with creating a RESTful web service for a **Bank Management System**. The API will allow the bank to manage customer accounts, including basic operations such as creating accounts, viewing balances, depositing and withdrawing funds, and transferring money between accounts. The data will be stored in an in-memory data structure (e.g., `List`) for simplicity.
 
-## Steps to Follow
+### Steps to Follow
 1. This GitHub repository will be accessible to you once you accept the Playground Challenge.
 2. You have to work directly in this GitHub repository. It is like your own copy of the original repository.
 
@@ -32,8 +32,7 @@ You are tasked with creating a RESTful web service for a **Bank Management Syste
 6. To work on the files, you can clone this GitHub repository onto your system and then open it with an IDE like IntelliJ, or Eclipse.
 7. Once done, push your changes to this remote GitHub repository.
 
-
-## Files to Work On
+### Files to Work On
 - `src/main/resources/static/index.html`
 - `src/main/java/com/bankmgmt/app/entity/Account.java`
 - `src/main/java/com/bankmgmt/app/service/BankService.java`
