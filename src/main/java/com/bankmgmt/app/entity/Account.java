@@ -17,6 +17,8 @@ public class Account {
         this.email = email;
     }
 
+    // TODO: Add getters and setters
+
     public Integer getId() {
         return id;
     }

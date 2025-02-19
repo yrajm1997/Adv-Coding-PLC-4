@@ -12,14 +12,14 @@ public class BankService {
     private List<Account> accounts = new ArrayList<>();
     private Integer currentId = 1;
 
-    // Create Account
+    // TODO: Method to Create a new Account
     public Account createAccount(String accountHolderName, String accountType, String email) {
         Account newAccount = new Account(currentId++, accountHolderName, accountType, 0.0, email);
         accounts.add(newAccount);
         return newAccount;
     }
 
-    // Get All Accounts
+    // TODO: Method to Get All Accounts
     public List<Account> getAllAccounts() {
         return accounts;
     }
@@ -33,12 +33,12 @@ public class BankService {
         return null;
     }
 
-    // Get Account by ID
+    // TODO: Method to Get Account by ID
     public Account getAccountById(Integer id) {
         return findAccountById(id);
     }
 
-    // Deposit Money
+    // TODO: Method to Deposit Money to the specified account id
     public Account deposit(Integer id, Double amount) {
         if (amount <= 0) {
             System.out.println("Amount must be greater than zero");
@@ -55,7 +55,7 @@ public class BankService {
         return account;
     }
 
-    // Withdraw Money
+    // TODO: Method to Withdraw Money from the specified account id
     public Account withdraw(Integer id, Double amount) {
         if (amount <= 0) {
             System.out.println("Amount must be greater than zero");
@@ -77,7 +77,7 @@ public class BankService {
         return account;
     }
 
-    // Transfer Money
+    // TODO: Method to Transfer Money from one account to another
     public List<Account> transfer(Integer fromId, Integer toId, Double amount) {
         Account fromAccount = findAccountById(fromId);
         Account toAccount = findAccountById(toId);
@@ -97,7 +97,7 @@ public class BankService {
         return Arrays.asList(fromAccount, toAccount);
     }
 
-    // Delete Account
+    // TODO: Method to Delete Account given a account id
     public String deleteAccount(Integer id) {
         Account account = findAccountById(id);
         if (account == null) {
